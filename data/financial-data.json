@@ -1,0 +1,43 @@
+{
+  "financialData": {
+    "cashFlowProjections": [
+      {
+        "year": 2023,
+        "revenue": 500000,
+        "expenses": 300000,
+        "netCashFlow": 200000
+      },
+      {
+        "year": 2024,
+        "revenue": 600000,
+        "expenses": 350000,
+        "netCashFlow": 250000
+      },
+      {
+        "year": 2025,
+        "revenue": 700000,
+        "expenses": 400000,
+        "netCashFlow": 300000
+      }
+    ],
+    "keyMetrics": {
+      "roi": 15,
+      "breakEvenPoint": 2,
+      "profitMargin": 40
+    },
+    "opportunityCostRates": [
+      {
+        "investmentOption": "Stock Market",
+        "rate": 8
+      },
+      {
+        "investmentOption": "Real Estate",
+        "rate": 6
+      },
+      {
+        "investmentOption": "Bonds",
+        "rate": 4
+      }
+    ]
+  }
+}
