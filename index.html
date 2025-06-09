@@ -1070,7 +1070,7 @@
             <div class="data-grid">
                 <div class="data-card">
                     <h4>CAPEX Inicial</h4>
-                    <span class="value">$210.000</span>
+                    <span class="value">$285.000</span>
                     <p>Inversión Año 0</p>
                 </div>
                 <div class="data-card">
@@ -1080,14 +1080,14 @@
                 </div>
                 <div class="data-card">
                     <h4>VAN Actual</h4>
-                    <span class="value negative">-$164.922</span>
+                    <span class="value negative">-$219.226</span>
                     <p>Con timing correcto</p>
                 </div>
             </div>
 
             <div class="critical-box">
                 <strong>⚠️ Impacto del Error Temporal:</strong>
-                <p>Si por error desplazáramos el CAPEX del Año 0 al Año 1, el VAN pasaría de <strong>-$164.922</strong> a <strong>-$144.000</strong>, un desfase de casi <strong>$20.000</strong> que distorsionaría completamente la decisión de inversión.</p>
+                <p>Si por error desplazáramos el CAPEX del Año 0 al Año 1, el VAN pasaría de <strong>-$219.226</strong> a <strong>-$199.342</strong>, un desfase de casi <strong>$20.000</strong> que distorsionaría completamente la decisión de inversión.</p>
             </div>
 
             <div class="content-section">
@@ -1164,11 +1164,11 @@
                 <div class="chart-metrics">
                     <div class="metric-item">
                         <div class="metric-label">VAN Total</div>
-                        <div class="metric-value negative">-$164.922</div>
+                        <div class="metric-value negative">-$199.3422</div>
                     </div>
                     <div class="metric-item">
                         <div class="metric-label">Flujo Acumulado Final</div>
-                        <div class="metric-value positive">$4.501</div>
+                        <div class="metric-value negative">-$315.815</div>
                     </div>
                     <div class="metric-item">
                         <div class="metric-label">Mejor Año</div>
@@ -1176,21 +1176,12 @@
                     </div>
                     <div class="metric-item">
                         <div class="metric-label">Peor Año</div>
-                        <div class="metric-value">Año 0: -$200.000</div>
+                        <div class="metric-value">Año 1: -$327.000</div>
                     </div>
                 </div>
             </div>
 
-            <!-- Gráfico Circular CAPEX -->
-            <div class="donut-chart-container">
-                <h3 class="chart-title">🥧 Distribución del CAPEX Total</h3>
-                <div class="donut-chart" id="capex-donut">
-                    <!-- El gráfico se generará con JavaScript -->
-                </div>
-                <div class="donut-legend" id="capex-legend">
-                    <!-- La leyenda se generará con JavaScript -->
-                </div>
-            </div>
+
         </div>
 
         <!-- Slide 4: Evolución de Ingresos -->
@@ -1396,7 +1387,7 @@
                 <div class="data-grid">
                     <div class="data-card">
                         <h4>Año 0</h4>
-                        <span class="value">$210.000</span>
+                        <span class="value">$285.000</span>
                         <p>Inversión inicial</p>
                     </div>
                     <div class="data-card">
@@ -1428,13 +1419,13 @@
             <div class="data-grid">
                                     <div class="data-card">
                         <h4>Préstamo 1 - Año 0</h4>
-                        <span class="value">GBP 10.000</span>
-                        <p>≈ USD 10.000</p>
+                        <span class="value">GBP 50.000</span>
+                        <p>≈ USD 75.000</p>
                     </div>
                     <div class="data-card">
                         <h4>Préstamo 2 - Año 3</h4>
                         <span class="value">GBP 30.000</span>
-                        <p>≈ USD 30.000</p>
+                        <p>≈ USD 19.500</p>
                     </div>
                 <div class="data-card">
                     <h4>Tasa de Interés</h4>
@@ -1525,17 +1516,17 @@
                     <tbody>
                         <tr>
                             <td>5.0%</td>
-                            <td class="negative">-$122.640</td>
+                            <td class="negative">-$181.877</td>
                             <td>Mejor escenario</td>
                         </tr>
                         <tr style="background-color: rgba(100, 116, 139, 0.2);">
                             <td><strong>7.5%</strong></td>
-                            <td class="negative"><strong>-$164.922</strong></td>
+                            <td class="negative"><strong>-$199.3422</strong></td>
                             <td><strong>Base</strong></td>
                         </tr>
                         <tr>
                             <td>10.0%</td>
-                            <td class="negative">-$197.354</td>
+                            <td class="negative">-$247.320</td>
                             <td>Escenario conservador</td>
                         </tr>
                     </tbody>
@@ -1560,19 +1551,19 @@
                 <div class="kpi-grid">
                     <div class="kpi-item">
                         <div>VAN</div>
-                        <span class="kpi-value negative">-$164.922</span>
+                        <span class="kpi-value negative">-$199.3422</span>
                     </div>
                     <div class="kpi-item">
                         <div>TIR</div>
-                        <span class="kpi-value negative">0.14%</span>
+                        <span class="kpi-value negative">-1.98%</span>
                     </div>
                     <div class="kpi-item">
                         <div>Payback</div>
-                        <span class="kpi-value">9.97 años</span>
+                        <span class="kpi-value">Sin recuperación</span>
                     </div>
                     <div class="kpi-item">
                         <div>IVAN</div>
-                        <span class="kpi-value negative">-82.5%</span>
+                        <span class="kpi-value negative">-104.4%</span>
                     </div>
                 </div>
             </div>
@@ -1672,18 +1663,18 @@
         // Generar gráfico de flujo de caja
         function generateCashFlowChart() {
             // Datos del flujo de caja libre
-            const cashFlowData = [
-                { year: 0, fcl: -200.000, cumulative: -200.000 },
-                { year: 1, fcl: -42.657, cumulative: -242.657 },
-                { year: 2, fcl: -86.924, cumulative: -329.581 },
-                { year: 3, fcl: -136.510, cumulative: -466.091 },
-                { year: 4, fcl: 31.178, cumulative: -434.913 },
-                { year: 5, fcl: -25.274, cumulative: -460.187 },
-                { year: 6, fcl: 66.258, cumulative: -393.929 },
-                { year: 7, fcl: 66.550, cumulative: -327.379 },
-                { year: 8, fcl: 73.892, cumulative: -253.487 },
-                { year: 9, fcl: 122.804, cumulative: -130.682 },
-                { year: 10, fcl: 135.183, cumulative: 4.501 }
+           const cashFlowData = [
+                { year: 0, fcl: -210.000, cumulative: -210.000 },
+                { year: 1, fcl: -327.657, cumulative: -537.657 },
+                { year: 2, fcl: -86.924, cumulative: -624.581 },
+                { year: 3, fcl: -136.510, cumulative: -761.091 },
+                { year: 4, fcl: 0.673, cumulative: -760.418 },
+                { year: 5, fcl: -56.084, cumulative: -816.502 },
+                { year: 6, fcl: 66.258, cumulative: -750.244 },
+                { year: 7, fcl: 66.550, cumulative: -683.694 },
+                { year: 8, fcl: 73.892, cumulative: -609.802 },
+                { year: 9, fcl: 122.804, cumulative: -486.998 },
+                { year: 10, fcl: 135.183, cumulative: -351.815 }
             ];
 
             const chartContainer = document.getElementById('cash-flow-chart');
@@ -1899,7 +1890,7 @@
         // Timeline interactiva
         function generateInteractiveTimeline() {
             const timelineEvents = [
-                { year: 0, event: 'Inversión Inicial', detail: 'CAPEX $210.000' },
+                { year: 0, event: 'Inversión Inicial', detail: 'CAPEX $285.000' },
                 { year: 1, event: 'Inicio Operaciones', detail: 'Ventas mayoristas' },
                 { year: 3, event: 'Préstamo 2', detail: 'GBP 30.000' },
                 { year: 4, event: 'Tienda Principal', detail: 'Apertura retail' },
